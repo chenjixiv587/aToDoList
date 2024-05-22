@@ -25,11 +25,12 @@
 }
 
 
-.info h1 {
+h1 {
     color: rgb(239, 61, 61);
 }
 
-.info input {
+.info input,
+.addTasks input:nth-of-type(1) {
     display: inline-block;
     width: 400px;
     height: 40px;
@@ -37,6 +38,14 @@
     box-shadow: 2px 2px 2px rgb(20, 67, 237);
     padding: 3px;
 
+}
+
+.addTasks {
+    margin-bottom: 20px;
+}
+
+.addTasks .container {
+    background-color: rgb(87, 236, 247);
 }
 
 .tasks .container {
@@ -69,11 +78,21 @@
     flex-wrap: wrap;
 }
 
-.tasks button {
+.tasks button,
+.addTasks input:nth-of-type(2) {
     display: block;
     background-color: rgb(92, 92, 245);
     padding: 5px 15px;
     border: none;
     box-shadow: 2px 2px 5px rgb(42, 191, 240);
     cursor: pointer;
+    color: aliceblue;
+}
+
+.addTasks input:nth-of-type(2) {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px rgb(174, 177, 177);
 }
